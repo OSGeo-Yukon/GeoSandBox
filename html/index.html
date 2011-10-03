@@ -18,7 +18,7 @@
             map.addLayer(layer);
             map.setCenter(new OpenLayers.LonLat(0, 0), 0);
             map.addControl(new OpenLayers.Control.LayerSwitcher());
-            var newl = new OpenLayers.Layer.GeoRSS( 'GeoRSS', 'georss.xml');
+            var newl = new OpenLayers.Layer.GeoRSS( 'GeoRSS', 'feed://openlayers.org/dev/examples/georss.xml');
             map.addLayer(newl);
             var yelp = new OpenLayers.Icon("http://www.openlayers.org/images/OpenLayers.trac.png", new OpenLayers.Size(49,44));
             var newl = new OpenLayers.Layer.GeoRSS( 'Yelp GeoRSS', 'yelp-georss.xml', {'icon':yelp});
