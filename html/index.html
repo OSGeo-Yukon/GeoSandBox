@@ -11,8 +11,7 @@
     <script type="text/javascript">
         var map, layer;
 
-        OpenLayers.ProxyHost = "/proxy/?url=";
-        function init(){
+       function init(){
             map = new OpenLayers.Map('map', {maxResolution:'auto'});
             layer = new OpenLayers.Layer.WMS( "OpenLayers WMS",
                 "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic'} );
